@@ -1,0 +1,477 @@
+body {
+    background: linear-gradient(to bottom, #666666, rgb(117, 117, 117), #8f0707 60%);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+section div {
+    flex: 1 1 calc(33.33% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section div:nth-child(1) {
+    background-color: #ffffff;
+}
+
+section div:nth-child(2) {
+    background-color: #ffffff;
+}
+
+section div:nth-child(3) {
+    background-color: #f7e4e4;
+}
+
+section div:nth-child(4) {
+    background-color: #e6f7e4;
+}
+
+section div:nth-child(5) {
+    background-color: #e4f1f7;
+}
+
+section div:nth-child(6) {
+    background-color: #f4e4f7;
+}
+
+section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(250, 0, 0, 0.3);
+}
+
+section h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin: 5px 0;
+}
+
+section > div button {
+    margin-top: auto;
+    padding: 10px 15px;
+    background-color: #494949;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section > div button:hover {
+    background-color: #e40c0c;
+}
+
+.bmwinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.bmwinfo h5, .bmwinfo p {
+    margin: 5px 0;
+    flex: 1;
+}
+
+header {
+    background: linear-gradient(to right, #bd1313 5%, #292929 95%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato-e-links {
+    background-color: #c2c2c2;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+
+.buttonform button {
+    background-color: #5e5d5d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonform button:hover {
+    background-color: #ff0000;
+}
+
+.links a {
+    text-decoration: none;
+    color: #4a4a4b;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #fc0202;
+}
+
+.links i {
+    margin-right: 10px;
+}
+
+.mapa iframe {
+    border-radius: 4px;
+}
+
+header.estoque {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+input[type="text"],
+select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    flex: 1;
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+#marca {
+    flex: auto; 
+}
+
+.buscarcar input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    flex: 1;
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+.buscarcar {
+    display: flex;
+    justify-content: center;
+}
+
+input, select {
+    height: 50px;
+    font-size: 16px;
+}
+
+.butaobuscar button {
+    background-color: #3b3b3b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.butaobuscar button:hover {
+    background-color: #ff0000;
+}
+
+.empresa {
+    color: #fff;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.empresa h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+    section div {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    section div {
+        flex: 1 1 calc(100% - 40px);
+    }
+
+    input, select {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .butao-buscar button {
+        padding: 8px 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .empresa {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    section img {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .empresa {
+        padding: 10px;
+    }
+}
+
+.card-mustang {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-tesla {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-mclaren {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-porsche, .card-mercedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+section div {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.close {
+    color: #fff; 
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000; 
+    text-decoration: none;
+    cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+.popout {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 70%; 
+    max-width: 600px; 
+    padding: 15px; 
+    overflow-y: auto; 
+    height: 90%; 
+}
+
+.popout img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.popout-content {
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.imglogosobre {
+    background-color: transparent;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.imglogosobre img {
+    max-width: 350px;
+    height: auto; 
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
+    pointer-events: none;
+}
+.ayrton-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ayrton10, .ayrton1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.ayrton10 img, .ayrton1 img {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.motivation {
+    margin-top: 10px;
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.assinatura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assinatura img {
+    width: 350px;
+}
+
+
+
+

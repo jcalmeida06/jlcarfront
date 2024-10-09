@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estoque</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="jl.style.css">
+    <link rel="shortcut icon" href="jlfav.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+               <a class="navbar-brand" href="#">
+                  <img src="/img/jl motors.png" alt="JL Motors Logo" width="200" height="70" class="d-inline-block align-text-top">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estoque.html">Estoque</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <header class="estoque">
+            <div class="busca">
+                <form action="buscarcar">
+                    <input type="text" placeholder="encontre seu carro">
+                    <select name="marca" id="marca">
+                        <option value="" disabled selected>
+                          Modelo
+                        </option>
+
+                        <option value="mercedez">
+                            Mercedez
+                        </option>
+                            
+                        <option value="bmw">
+                            Bmw
+                        </option>
+
+                        <option value="tesla">
+                            Tesla
+                        </option>
+  
+                        <option value="mustang">
+                            Mustang
+                        </option>
+
+                        <option value="maclaren">
+                            Maclaren
+                        </option>
+
+                        <option value="porsche">
+                            Porsche
+                        </option>
+                    </select>
+                    <div class="selectano">
+                        <select name="Ano" id="Ano">
+                            <option value="" desabled selected>
+                                Ano
+                            </option>
+                            
+                            <option value="">
+                                2022
+                            </option>
+                            <option value="">
+                                2018
+                            </option>
+
+                            <option value="">
+                                2022
+                            </option>
+
+                            <option value="">
+                                2020
+                            </option>
+
+                            <option value="">
+                                2023
+                            </option>
+
+                            <option value="">
+                                1966
+                            </option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        <div class="butaobuscar">
+            <button>Buscar</button>
+        </div>
+
+
+        </header>
+        <section>
+            <div class="bmwinfo">
+                <div class="bmwimg">
+                    <img src="/img/bmw/Captura de tela 2024-09-22 114843.png" alt="BMW">
+                </div>
+                <div class="infocar">
+                    <h5>BMW - M3 Competition</h5><br>
+                    <p>Ano: 2022</p>
+                    <p>Preço: R$689.990</p>
+                    <button onclick="openPopout('myPopout')">ver Detalhes</button>
+                </div>
+            </div>
+        
+            <div id="myPopout" class="popout" style="display: none;">
+                <div class="popout-content">
+                    <span class="close" onclick="closePopout('myPopout')">&times;</span>
+                    <img src="img/bmw/Captura de tela 2024-09-22 114915.png" alt="">
+                    <h2>BMW M3 Competition - 2022</h2>
+                    <p><strong>Preço:</strong> R$689.990</p>
+                    <p><strong>Motor:</strong> 3.0L Twin-Turbo Inline-6</p>
+                    <p><strong>Potência:</strong> 510 cv</p>
+                    <p><strong>Velocidade Máxima:</strong> 290 km/h</p>
+                    <p><strong>Aceleração 0-100 km/h:</strong> 3.8 segundos</p>
+                    <p><strong>Descrição:</strong> O BMW M3 Competition é uma máquina esportiva com um design sofisticado e desempenho incrível. Com tecnologia de ponta e conforto premium, oferece uma experiência de condução incomparável.</p>
+                </div>
+            </div>
+        
+            <div class="mercedesinfo">
+                <div class="img">
+                    <img src="/img/mercedez/Captura de tela 2024-09-22 120015.png" alt="Mercedes-Benz C180">
+                </div>
+                <div class="infocar">
+                    <h5>Mercedes-Benz - Amg GT ROADSTER C AMG</h5>
+                    <p>Ano: 2018</p>
+                    <p>Preço: R$ 1.799.990</p>
+                    <button onclick="openPopout('myModalMercedes')">Ver Detalhes</button>
+                </div>
+            </div>
+        
+            <div id="myModalMercedes" class="popout" style="display: none;">
+                <div class="popout-content">
+                    <span class="close" onclick="closePopout('myModalMercedes')">&times;</span>
+                    <img src="/img/mercedez/Captura de tela 2024-09-22 120112.png" alt="">
+                    <h2>Mercedes-Benz AMG GT Roadster C AMG - 2018</h2>
+                    <p><strong>Preço:</strong> R$ 1.799.990</p>
+                    <p><strong>Motor:</strong> 4.0L V8 Biturbo</p>
+                    <p><strong>Potência:</strong> 557 cv</p>
+                    <p><strong>Velocidade Máxima:</strong> 317 km/h</p>
+                    <p><strong>Aceleração 0-100 km/h:</strong> 3.6 segundos</p>
+                    <p><strong>Descrição:</strong> O Mercedes-AMG GT Roadster combina desempenho brutal com o charme de um carro conversível de luxo. Seu motor V8 proporciona uma experiência de condução emocionante, enquanto seu design sofisticado garante uma presença imponente nas ruas.</p>
+                </div>
+            </div>
+        
+            <div class="infoporsche">
+                <div class="imgporsche">
+                    <img src="/img/porsche/frente.png" alt="Porsche 911">
+                </div>
+                <div class="infocar">
+                    <h5>Porsche - 911 Carrera S</h5>
+                    <p>Ano: 2022</p>
+                    <p>Preço: R$ 999.990</p>
+                    <button onclick="openPopout('myModalPorsche')">Ver Detalhes</button>
+                </div>
+            </div>
+        
+            <div id="myModalPorsche" class="popout" style="display: none;">
+                <div class="popout-content">
+                    <span class="close" onclick="closePopout('myModalPorsche')">&times;</span>
+                    <img src="/img/porsche/interna.png" alt="">
+                    <h2>Porsche 911 Carrera S - 2022</h2>
+                    <p><strong>Preço:</strong> R$ 999.990</p>
+                    <p><strong>Motor:</strong> 3.0L Twin-Turbo Boxer 6</p>
+                    <p><strong>Potência:</strong> 450 cv</p>
+                    <p><strong>Velocidade Máxima:</strong> 308 km/h</p>
+                    <p><strong>Aceleração 0-100 km/h:</strong> 3.5 segundos</p>
+                    <p><strong>Descrição:</strong> O Porsche 911 Carrera S é a perfeita combinação de elegância e performance. Seu design icônico aliado à tecnologia de ponta proporciona uma condução inesquecível e emocionante em qualquer situação.</p>
+                </div>
+            </div>
+        
+            <div class="mclareninfo">
+                <div class="imgmaclaren">
+                    <img src="/img/mclarenn/Captura de tela 2024-09-28 231348.png" alt="McLaren 720S">
+                </div>
+                <div class="infocar">
+                    <h5>McLaren - 720S</h5>
+                    <p>Ano: 2020</p>
+                    <p>Preço: R$ 2.299.000</p>
+                    <button onclick="openPopout('myModalMcLaren')">Ver Detalhes</button>
+                </div>
+            </div>
+        
+            <div id="myModalMcLaren" class="popout" style="display: none;">
+                <div class="popout-content">
+                    <span class="close" onclick="closePopout('myModalMcLaren')">&times;</span>
+                    <img src="/img/mclarenn/Captura de tela 2024-09-28 231407.png" alt="">
+                    <h2>McLaren 720S - 2020</h2>
+                    <p><strong>Preço:</strong> R$ 2.299.000</p>
+                    <p><strong>Motor:</strong> 4.0L V8 Biturbo</p>
+                    <p><strong>Potência:</strong> 720 cv</p>
+                    <p><strong>Velocidade Máxima:</strong> 341 km/h</p>
+                    <p><strong>Aceleração 0-100 km/h:</strong> 2.9 segundos</p>
+                    <p><strong>Descrição:</strong> A McLaren 720S combina engenharia de ponta com um design impressionante, proporcionando uma experiência de direção incomparável.</p>
+                </div>
+            </div>
+        
+            <div class="infotesla">
+                <div class="imgtesla">
+                    <img src="/img/tesla/f1.png" alt="Tesla Model 3">
+                </div>
+                <div class="infocar">
+                    <h5>Tesla - Model 3</h5>
+                    <p>Ano: 2023</p>
+                    <p>Preço: R$ 319.990</p>
+                    <button onclick="openPopout('myModalTesla')">Ver Detalhes</button>
+                </div>
+            </div>
+        
+            <div id="myModalTesla" class="popout" style="display: none;">
+                <div class="popout-content">
+                    <span class="close" onclick="closePopout('myModalTesla')">&times;</span>
+                    <img src="/img/tesla/f2.png" alt="">
+                    <h2>Tesla Model 3 - 2023</h2>
+                    <p><strong>Preço:</strong> R$ 319.990</p>
+                    <p><strong>Autonomia:</strong> 530 km</p>
+                    <p><strong>Aceleração 0-100 km/h:</strong> 3.1 segundos</p>
+                    <p><strong>Descrição:</strong> O Tesla Model 3 é o veículo elétrico revolucionário que combina tecnologia de ponta com sustentabilidade, oferecendo uma experiência de direção sem igual.</p>
+                </div>
+            </div>
+        
+            <div class="mustanginfo">
+                <div class="imgmustang">
+                    <img src="/img/mustang/must1.png" alt="Classic Mustang">
+                </div>
+                <div class="infocar">
+                    <h5>Ford - Mustang Conversível</h5>
+                    <p>Ano: 1966</p>
+                    <p>Preço: R$ 439.990</p>
+                    <button onclick="openPopout('myModalMustang')">Ver Detalhes</button>
+                </div>
+            </div>
+        
+            <div id="myModalMustang" class="popout" style="display: none;">
+                <div class="popout-content">
+                    <span class="close" onclick="closePopout('myModalMustang')">&times;</span>
+                    <img src="/img/mustang/must2.png" alt="">
+                    <h2>Ford Mustang Conversível - 1966</h2>
+                    <p><strong>Preço:</strong> R$ 439.990</p>
+                    <p><strong>Motor:</strong> 4.7L V8</p>
+                    <p><strong>Potência:</strong> 271 cv</p>
+                    <p><strong>Velocidade Máxima:</strong> 190 km/h</p>
+                    <p><strong>Aceleração 0-100 km/h:</strong> 7.1 segundos</p>
+                    <p><strong>Descrição:</strong> O Ford Mustang 1966 é um ícone do automobilismo, com design atemporal e desempenho marcante, uma verdadeira obra-prima para os amantes de carros clássicos.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center mt-5 bg-dark text-light pt-4 pb-4">
+            <div class="container">
+                <div class="Logo mb-3">
+                    <img src="/img/jl motors.png" alt="JL Motors Logo" width="200px">
+                </div>
+                <p>Todos os direitos reservados &copy; 2024</p>
+                <ul class="list-unstyled d-flex justify-content-center mb-3">
+                    <li class="mx-2"><a href="/home.html" class="text-light">Home</a></li>
+                    <li class="mx-2"><a href="estoque.html" class="text-light">Estoque</a></li>
+                    <li class="mx-2"><a href="/sobre.html" class="text-light">Sobre</a></li>
+                    <li class="mx-2"><a href="contato.html" class="text-light">Contato</a></li>
+                </ul>
+                <div class="mb-3">
+                    <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="mt-2">
+                    <p>Email: contato@jlmotors.com</p>
+                    <p>Telefone: (81) 99999-9999</p>
+                </div>
+            </div>
+        </footer>
+      <script src="/js"></script>
+      </body>
+      </html>
+      
